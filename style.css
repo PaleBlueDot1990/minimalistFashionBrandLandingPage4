@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 1px;
+}
+
+#nav {
+    height: 12vh;
+    width: 100%;
+    /*background-color: red;*/
+    margin-top: 40px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h1 {
+    /*background-color: rgb(200, 255, 0);*/
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Monument Extended;
+    font-size: 45px;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+#nav h1::after {
+    content: 'Ⓒ';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    right: 12%;
+}
+
+#nav h1::before {
+    content: "model management";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom: 22%;
+    right: 18%;
+    color: #666;
+}
+
+#nav h2 {
+    /*background-color: rgb(200, 255, 0);*/
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+#nav h2:nth-last-child(2) {
+    width: 29%;
+}
+
+#nav h2:nth-last-child(1) {
+    width: 10%;
+}
+
+#center {
+    height: 90%;
+    width: 100%;
+    /*background-color: red;*/
+    padding: 3vw;
+    position: relative;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+}
+
+#content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /*background-color: red;*/
+    padding: 3vw;
+    color: #fff;
+}
+
+#over1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#over1 h1 {
+    font-family: Monument Extended; 
+    font-size: 3vw;
+}
+
+#over1 h2 {
+    font-size: 1vw;
+    padding: 1vw;
+    /*background-color: blue;*/
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+
+#over2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0vw;
+}
+
+#over2 h4 {
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+#over2 img {
+    height: 4vw;
+}
+
+#scroll {
+    height: 40vh;
+    width: 100%;
+    /*background-color: red;*/
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 1vw;
+}
+
+#container {
+    height: 100%;
+    width: 110%;
+    /*background-color: blue;*/
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll img {
+    height: 95%;
+    border-radius: 50%;
+    margin: 1vw;
+    width: 15%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#alphabet {
+    height: 10vh;
+    width: 100%;
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#alphabet h5 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid #000;
+    margin-right: 2vw;
+}
+
+#alphabet h6 {
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    /*background-color: yellow;*/
+    transition: all ease 0.2s;
+}
+
+#alphabet h6:hover {
+    border: 2px solid #000;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#page2-part1 {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1618375531912-867984bdfd87?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fG1vZGVsJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#page2-part2 {
+    height: 100%;
+    width: 45%;
+}
+
+#page2-part2 img {
+    height: 77%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#page2-part2-text {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+#page2-part2-text h5 {
+    width:40%;
+    font-size: 1.6vw;
+}
+
+#page2-part2-text h6 {
+    width: 60%;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+#page3>h1 {
+    text-align: center;
+    font-family: Monument Extended;
+    text-transform: uppercase;
+    font-size: 2vw;
+    margin-bottom: 5vh;
+}
+
+.elem{
+    height: 15vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+    /*background-color: red;*/
+}
+
+.elem h4 {
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-weight: 500;
+    width: 6%;
+}
+
+.elem img {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    border-radius: 50%;
+    left: 25%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all ease 0.33s;
+}
+
+.elem .elem-part2 {
+    width: 45%;
+}
+
+.elem-part2 h1 {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.elem-part2 h5 {
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.elem:nth-last-child(1) {
+    border-bottom: 2px solid black;
+}
+
+.elem:hover {
+    background-color: #f3eeee;
+}
+
+.elem:hover img {
+    opacity: 1;
+}
+
+#marquee {
+    width: 100%;
+    /*background-color: red;*/
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#marquee h1 {
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: Monument Extended;
+    margin-right: 16px;
+    animation-name: anime2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#footer {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translate(calc(-100% - 20px));
+    }
+}
+

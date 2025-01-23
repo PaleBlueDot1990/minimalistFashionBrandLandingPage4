@@ -392,3 +392,154 @@ html, body {
     }
 }
 
+@media (max-width:600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #nav {
+        height: 8vh;
+        margin-top: 20px;
+        padding: 0 5vw;
+    }
+    
+    #nav h1 {
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 25px;
+    }
+    
+    #nav h1::after {
+        display: none;
+    }
+    
+    #nav h1::before {
+        display: none;
+    }
+    
+    #nav h2 {
+        display: none;
+    }
+    
+    #nav h3 {
+        display: block;
+    }
+
+    #center {
+        height: 50%;
+        width: 100%;
+        /*background-color: red;*/
+        padding: 3vw;
+        position: relative;
+    }
+    
+    #content {
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        position: relative;
+    }
+    
+    #content video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #overlay {
+        height: fit-content;
+    }
+    
+    #over1 h1 {
+        font-size: 5vw;
+    }
+    
+    #over1 h2 {
+        font-size: 3vw;
+    }
+    
+    #over2 h4 {
+        font-size: 3vw;
+    }
+    
+    #over2 img {
+        height: 7vw;
+    }
+
+    #scroll {
+        height: 20vh;
+    }
+    
+    #container {
+        width: 200%;
+    }
+    
+    #scroll img {
+        width: 15%;
+    }
+
+    #page2 {
+        height: 50%;
+        padding: 4vw 5vw;
+    }
+    
+    #page2-part2 img {
+        height: 82%;
+    }
+    
+    #page2-part2-text h5 {
+        width: 100%;
+        font-size: 2vw;
+    }
+    
+    #page2-part2-text h6 {
+        width: 100%;
+        font-size: 1.4vw;
+    }
+
+    #page3 {
+        height: 55%;
+    }
+    
+    #page3>h1 {
+        font-size: 5vw;
+    }
+    
+    .elem{
+        height: 8vh;
+    }
+    
+    .elem h4 {
+        font-size: 2vw;
+    }
+    
+    .elem img {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .elem .elem-part2 {
+        width: 45%;
+    }
+    
+    .elem-part2 h1 {
+        font-size: 2.5vw;
+    }
+    
+    .elem-part2 h5 {
+        font-size: 1.5vw;
+    }
+
+    #marquee {
+        padding: 1.5vw;
+    }
+    
+    #marquee h1 {
+        font-size: 4vw;
+    }
+    
+    #footer {
+        height: 10%;
+    }
+}
+
